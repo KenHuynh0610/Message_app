@@ -5,9 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 6.0
 
-* System dependencies
+* System dependencies 
+run bundle install
 
 * Configuration
 
