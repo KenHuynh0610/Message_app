@@ -1,0 +1,11 @@
+<% Message.all.each do |message| %>
+<div class="event">
+    <div class="content">
+        <div class="summary">
+            <a class="user">
+            <%= message.user.username%>
+            </a> <%= message.content%>
+        </div>
+    </div>
+</div>    
+<% end %> 
