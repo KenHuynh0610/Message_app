@@ -1,0 +1,23 @@
+<h1 class="ui center aligned large orange icon header">
+  <i class="circular address card icon"></i>
+  Sign Up
+</h1>
+<div class="ui inverted segment">
+<form class="ui inverted form">
+  <%= form_with scope: :users, url: users_path, local: true do |f|%>
+  <div class="field">
+    <label>User Name</label>
+    <%= f.text_field :username, placeholder: "Enter User Name" %>
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <%= f.email_field :email, placeholder: "Email Address" %>
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <%= f.password_field :password, placeholder: "Password" %>
+  </div>
+  <button class="ui orange button" type="submit">Submit</button>
+</div>
+  <%end%>
+</form>
